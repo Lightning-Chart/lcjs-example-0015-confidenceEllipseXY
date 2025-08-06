@@ -12,17 +12,13 @@ const chart = lightningChart({
             resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
         })
     .ChartXY({
+        legend: { visible: false },
         theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('Scatter chart + confidence Ellipse')
 
 // Create point series for visualizing scatter points.
-const pointSeries = chart
-    .addPointLineAreaSeries({ dataPattern: null })
-    .setPointShape(PointShape.Circle)
-    .setPointSize(3)
-    .setStrokeStyle(emptyLine)
-    .setName('Scatter series')
+const pointSeries = chart.addPointSeries().setPointShape(PointShape.Circle).setPointSize(3).setName('Scatter series')
 
 // Visualize confidence ellipse with polygon series.
 // Note, routine for calculation of confidence ellipse coordinates from scatter data set is not currently included in LightningChart JS!
@@ -37,7 +33,7 @@ fetch(
         const { scatterPoints, confidenceEllipsePolygonCoords } = data
 
         // Add data to series.
-        pointSeries.add(scatterPoints)
+        pointSeries.appendJSON(scatterPoints)
         polygonSeries
             .add(confidenceEllipsePolygonCoords)
             .setFillStyle(new SolidFill({ color: ColorCSS('gray').setA(30) }))
