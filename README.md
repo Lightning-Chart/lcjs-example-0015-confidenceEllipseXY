@@ -78,12 +78,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2025. All rights reserved.
 
 
-[Lightning chart]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/functions/lightningChart-1.html
-[Color factory CSS]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/functions/ColorCSS.html
-[2D Point shape options]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/enums/PointShape.html
-[Solid line style]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/SolidLine.html
-[Solid fill style]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/SolidFill.html
-[Chart XY]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/ChartXY.html
-[Point Series 2D]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/PointSeries.html
-[Polygon Series 2D]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/PolygonSeries.html
+[Lightning chart]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/functions/lightningChart-1.html
+[Color factory CSS]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/functions/ColorCSS.html
+[2D Point shape options]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/enums/PointShape.html
+[Solid line style]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/SolidLine.html
+[Solid fill style]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/SolidFill.html
+[Chart XY]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/ChartXY.html
+[Point Series 2D]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/PointLineAreaSeries.html
+[Polygon Series 2D]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/PolygonSeries.html
 
